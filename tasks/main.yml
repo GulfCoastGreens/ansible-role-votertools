@@ -27,4 +27,5 @@
     chdir: "../"
   with_items:
     - 'rm -rf deploy'
+    - "mkdir -p deploy"
     - "node_modules/grunt-cli/bin/grunt shell:fpmrpm"
