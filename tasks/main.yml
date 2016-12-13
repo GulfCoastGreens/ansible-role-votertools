@@ -26,4 +26,5 @@
   args:
     chdir: "../"
   with_items:
+    - 'rm -rf deploy'
     - "node_modules/grunt-cli/bin/grunt shell:fpmrpm"
