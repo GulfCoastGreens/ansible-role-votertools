@@ -6,5 +6,5 @@
 - name: Setup oauth key for composer
   composer:
     command: config
-    working_dir: ~/
+    working_dir: "{{ jenkins_home }}"
     arguments: "--global github-oauth.github.com {{ composer_github_oauth }}"
