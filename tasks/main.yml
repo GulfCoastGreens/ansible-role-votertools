@@ -6,7 +6,7 @@
 - name: Update composer dependencies
   composer:
     command: "{{ item }}"
-    working_dir: "{{ playbook_dir }}/../"
+    working_dir: "./"
   with_items:
     - install
     - update
