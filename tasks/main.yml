@@ -2,7 +2,7 @@
 - name: Add gem fpm
   include: gems_fpm.yml
 - name: Add composer
-  include: composeroauth.yml
+  include: composer.yml
 - name: Update composer dependencies
   composer:
     command: "{{ item }}"
