@@ -6,14 +6,14 @@
 - name: Update composer dependencies
   composer:
     command: "{{ item }}"
-    working_dir: "./"
+    working_dir: "../"
   with_items:
     - install
     - update
 - name: Build the package
   shell: "{{ item }}"
   args:
-    chdir: "{{ playbook_dir }}/../"
+    chdir: "../"
   with_items:
     - "npm cache clean"
     - "npm prune"
@@ -24,6 +24,6 @@
 - name: Build the RPM package
   shell: "{{ item }}"
   args:
-    chdir: "{{ playbook_dir }}/../"
+    chdir: "../"
   with_items:
     - "node_modules/grunt-cli/bin/grunt shell:fpmrpm"
