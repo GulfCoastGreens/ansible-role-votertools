@@ -1,0 +1,5 @@
+---
+- name: Install composer
+  shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=~/bin --filename=composer
+  args: 
+    creates: ~/bin/composer
