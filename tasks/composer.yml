@@ -8,3 +8,4 @@
     command: config
     working_dir: "{{ jenkins_home }}"
     arguments: "--global github-oauth.github.com {{ composer_github_oauth }}"
+  no_log: True
